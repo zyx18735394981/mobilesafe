@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进程管理"
+        android:id="@+id/textview1"
+        android:background="#8866ff00"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+
+    />
+    <!--FrameLayout 在布局文件中控件越往下，显示的时候最在上方  -->
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+  
+    <ListView 
+        android:layout_marginTop="40dp"
+        android:id="@+id/lv_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        >      
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+       <TextView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:text="进程总数:57"
+        android:id="@+id/tv_tasknum1"
+        android:padding="3dp"
+        /> 
+       <TextView 
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:text="剩余总共:615MB/2.5G"
+        android:id="@+id/tv_tasknum2"
+         android:padding="3dp"
+        
+        /> 
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_task"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#888888"
+        android:textColor="#fff"
+        android:text="用户进程(6)"
+         android:layout_marginTop="20dp"
+        
+        />
+  
+<!-- 在listview上方放进度条 -->
+    <ProgressBar 
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:indeterminateDrawable="@drawable/progressbar_drawable"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选" />
+
+        <Button
+            android:id="@+id/button3"
+          android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="清理" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置" />
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+</LinearLayout>

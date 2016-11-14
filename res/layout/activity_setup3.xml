@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- layout_gravity : 设置控件在父控件中的位置 
+    	 gravity : 设置控件内的内容的位置
+    	 layout_marginTop : 距离某控件的距离
+    	 paddingTop : 距离控件内边框的距离,距离textview控件内顶边框的距离
+    -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.设置安全号码" 
+        android:background="#8866ff00"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+    
+    	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#000"
+	    android:textSize="18sp"
+	    android:layout_margin="5dp"
+	    android:text="sim变更后\n就会发送报警短信至安全号码"/>
+	<EditText 
+	    android:id="@+id/et_phone_number"
+	    android:hint="请输入电话号码"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>
+	<Button 
+	    android:id="@+id/bt_select_number"
+	    android:text="选择联系人"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:onClick="selectContact"
+	    />
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+         android:orientation="horizontal"
+        >
+       
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+       
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+          <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- layout_centerInParent : 在父控件的中间位置 -->
+
+        <!-- layout_alignParentRight : 在父控件的右方 
+        layout_alignParentBottom : 在父控件的下方
+        padding : 距离控件上下左右内边框的距离
+        -->
+        
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:src="@drawable/setup1" />
+
+     <Button
+           style="@style/nextbtn"
+            /> 
+        
+         <Button
+           style="@style/prebtn"
+            /> 
+        
+
+    </RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

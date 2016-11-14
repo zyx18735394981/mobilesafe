@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+   >
+   <!-- 控件类型_控件所在位置_控件表示的逻辑内容 -->
+      <TextView
+	        android:id="@+id/tv_splash_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="25dp"
+	        android:text="@string/title" 
+	        android:textSize="50sp"
+	        android:shadowColor="#ffff00"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="2"
+        />
+   
+       <TextView
+	        android:id="@+id/tv_splash_versionname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="250dp"
+	        android:text="@string/version" 
+	        android:textSize="25sp"
+	        android:shadowColor="#ffff00"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="2"
+        />
+       
+       
+        <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_splash_versionname"
+        android:layout_centerHorizontal="true" />
+       
+    <!-- 显示下载进度-->
+    <!--隐藏控件    android:visibility="invisible"  不可见，占用位置   visible 可见    gone不可见,也占位置 -->
+   <TextView
+        android:id="@+id/tv_spalsh_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+     
+        android:text="TextView" 
+        android:visibility="invisible"    
+        android:layout_marginLeft="10dp"
+        />
+    
+ 
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="com.zyx.mobilesafe.ui.SettingView">
+         <attr name="title" format="string"></attr>
+         <attr name="des_off" format="string"></attr>
+         <attr name="des_on" format="string"></attr>      
+    </declare-styleable>
+    
+    
+    
+</resources>

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   
+    <!--layout_gravity:设置控件 在父控件中的位置 
+        gravity:设置控件内的内容的位置
+    -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能列表"
+        android:id="@+id/textview1"
+        android:background="#8866ff00"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+
+    />
+    
+    
+    
+    
+    <!-- 跑马灯效果 -->
+    <!--  android:singleLine="true"  设置成一行 -->
+    <!--   android:ellipsize=""  none省略后面的文字  strart  middle  end 滚动隐藏    marquee实现滚动操作-->
+   
+   <!--  android:focusableInTouchMode="true"  触摸获取焦点  按钮的 -->
+   <!-- textview 没有点击事件 也没有获取焦点的事件 -->
+   <!--    android:focusable="true" 是否获取焦点的操作 -->
+   <!--   android:marqueeRepeatLimit="marquee_forever"  -1 设置滚动次数 一直滚动  -->
+    <com.zyx.mobilesafe.ui.HomeTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="薛之谦粉丝必备的手机防盗app,通过给手机发送一条指令，马上定位你的手机，轻轻松松找到小偷"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true" 
+       
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+    <!-- 自定义一个textView 让textView自动获取焦点 -->
+    
+    <LinearLayout
+         android:layout_marginTop="70dp"
+	    android:id="@+id/adLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="70dp"
+	    android:gravity="center_horizontal">
+	</LinearLayout>
+    
+    
+    
+    
+    
+    <!--   android:numColumns="3"  设置每行显示的个数-->
+    <!--  android:verticalSpacing="10dp" 设置每行的距离  -->
+    <GridView 
+        android:id="@+id/gv_home_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+       
+        android:layout_marginTop="130dp"
+        ></GridView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>

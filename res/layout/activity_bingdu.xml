@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_scanner_malware" />
+
+        <ImageView
+            android:id="@+id/iv_img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/act_scanning_03" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_title"
+            android:layout_toRightOf="@+id/iv"
+            android:progressDrawable="@drawable/progerssbar_antivirus_bg" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/progressBar1"
+            android:layout_alignTop="@+id/iv"
+            android:layout_marginTop="15dp"
+            android:text="正在扫描"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <ScrollView 
+         android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        >
+        
+        
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

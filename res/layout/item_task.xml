@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout 
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/iv_icon"
+            android:src="@drawable/bg"
+            android:layout_marginLeft="20dp"
+            />     
+    </LinearLayout>
+    
+        <LinearLayout 
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/ll1"
+        android:layout_marginTop="20dp"
+        >
+        
+            <TextView 
+                android:id="@+id/tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="项目名称"
+                android:textColor="#000"
+                />
+            
+              <TextView 
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_packageName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="包名"
+                  android:textColor="#888888"
+                />
+              
+            <TextView 
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="内存大小"
+                  android:textColor="#888888"
+                />
+            
+              
+    </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="33dp" />
+   
+</RelativeLayout>

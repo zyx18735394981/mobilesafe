@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进程管理" 
+        android:background="#8866ff00"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1"
+        >
+
+        <ListView
+         
+            android:id="@+id/lv_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp" >
+        </ListView>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+       <TextView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:text="SD卡可用空间"
+        android:id="@+id/tv_appnum1"
+        android:padding="3dp"
+        /> 
+       <TextView 
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:text="手机内存可用空间"
+        android:id="@+id/tv_appnum2"
+         android:padding="3dp"
+        
+        /> 
+    </LinearLayout>
+        
+       <TextView 
+        
+         android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#888888"
+        android:textColor="#ffffff"
+        android:layout_marginTop="28dp"
+       
+        
+        />
+
+
+
+        
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_drawable"
+            />
+    </FrameLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:onClick="all"
+            />
+         <Button 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选"
+            android:onClick="cancel"
+            />
+          <Button 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="清理"
+            android:onClick="clear"
+            />
+           <Button 
+           	android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:onClick="setting"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>
